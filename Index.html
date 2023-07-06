@@ -1,0 +1,119 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Content/Estilos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <nav>
+        <ul class="w3-navbar w3-black">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Desenvolvimento</a></li>
+            <li><a href="#">Fotografias</a></li>
+            <li><a href="#">Revista</a></li>
+        </ul>
+    </nav>
+
+    <img src="Images/Logo.png" style="width:100px; margin:20px; position:absolute;">
+
+    <section>
+        <img class="mySlides" src="Images/A.jpg"
+             style="width:100%">
+        <img class="mySlides" src="Images/B.jpg"
+             style="width:100%">
+        <img class="mySlides" src="Images/C.jpg"
+             style="width:100%">
+    </section>
+
+    <section class="w3-container w3-center w3-content" style="max-width:600px">
+        <h2 class="w3-wide">infoQ+</h2>
+        <p class="w3-opacity"><i>"Sua empresa nosso foco!"</i></p>
+        <p class="w3-justify">
+            A infoQ+ é uma empresa que fornece a prestação de serviços tecnologicos, de diversas categorias, visando a total segurança e satisfação de nossos parceiros.
+            Trabalhamos com construção de webSites modernos e responsivos; desenvolvimento de softwares voltados para a realidade da sua empresa.
+            Na área do marketing digital e impresso, abrangemos a criação de logomarcas e artes em geral, cartões de visitas, dentre outros.
+            Agregamos valor com nosso impresso trimestral a Revista infoQ+ Itaú. Além de contarmos com uma equipe altamente capacitada na área fotográfica.
+            Seja bem vindo! Somos a equipe infoQ+!
+        </p>
+    </section>
+
+    <section class="w3-row-padding w3-center w3-light-grey">
+        <article class="w3-third">
+            <p>Desenvolvimento de Sites e Marketing Digital</p>
+            <img src="Images/D.jpg" alt="A" style="width:100%">
+            <p>A é o primeiro.</p>
+        </article>
+        <article class="w3-third">
+            <p>infoQ+ Fotografias</p>
+            <img src="Images/D.jpg" alt="B" style="width:100%">
+            <p>B é o segundo.</p>
+        </article>
+        <article class="w3-third">
+            <p>Revista infoQ+ Itaú</p>
+            <img src="Images/D.jpg" alt="C" style="width:100%">
+            <p>C é o terceiro</p>
+        </article>
+    </section>
+
+    <section>
+        <img src="Images/A.jpg" style="width:100%">
+    </section>
+
+    <section class="w3-row-padding w3-center w3-light-grey">
+        <article class="w3-third">
+            <p>D</p>
+            <img src="Images/D.jpg" alt="D" style="width:100%">
+            <p>
+                D é o quarto.<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </article>
+        <article class="w3-third">
+            <p>E</p>
+            <img src="Images/D.jpg" alt="E" style="width:100%">
+            <p>
+                E é o quinto.<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </article>
+        <article class="w3-third">
+            <p>F</p>
+            <img src="Images/D.jpg" alt="F" style="width:100%">
+            <p>
+                F é o sexto.<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+        </article>
+    </section>
+
+    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+        <p class="w3-medium">
+            Desenvolvido por <a href="http://www.google.com" target="_blank">Reinaldo Leal</a>
+        </p>
+    </footer>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+
+</body>
+</html>
